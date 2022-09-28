@@ -12,7 +12,19 @@
 		<section class="prompt">
 			<h3>todos</h3>
 			<h1>Sign up</h1>
-			<hr>
+			<form action="/signup" method="post">
+				<section>
+					<label for="username">Username</label>
+					<input type="text" name="username" id="username" autocomplete="username" required>
+				</section>
+
+				<section>
+					<label for="new-password">Password</label>
+					<input type="password" name="password"  id="new-password" autocomplete="new-password" required>
+				</section>
+				
+				<button type="submit">Sign up</button>
+			</form>
 			<p class="help">Already have an account? <a href="/login">Sign in</a></p>
 		</section>
 		<footer class="info">
